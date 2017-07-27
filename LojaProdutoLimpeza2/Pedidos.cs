@@ -12,7 +12,6 @@ namespace LojaProdutoLimpeza
 
         public int NumeroPedido { get; set; }
         public DateTime DataPedido { get; set; }
-        public int QuantidadeDeProdutos { get; set; }
         public double ValorTotal { get; set; }
 
 
