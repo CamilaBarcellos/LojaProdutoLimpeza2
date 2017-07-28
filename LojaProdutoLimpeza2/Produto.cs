@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace LojaProdutoLimpeza
 {
-    class Produto
+    public class Produto
     {
-        public int IdProduto { get; set; }
+        public string IdProduto { get; set; }
         public string NomeProduto { get; set; }
         public DateTime DataFabricacao { get; set; }
         public DateTime DataValidade { get; set; }
@@ -16,22 +16,15 @@ namespace LojaProdutoLimpeza
 
         public Categoria Categoria { get; set; }
 
+        public List<Produto> ListaDeProdutos = new List<Produto>();
 
-        public void CadastrarProduto()
-        {
-
-        }
-
+        
         public void ListarProdutos()
         {
 
         }
 
-        public void RemoverProduto()
-        {
-
-        }
-
+        
         public void VerificarEstoque()
         {
 

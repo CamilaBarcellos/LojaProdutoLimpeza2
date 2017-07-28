@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LojaProdutoLimpeza
 {
-    class Pedidos
+    public class Pedidos
     {
         Produto produto = new Produto();
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LojaProdutoLimpeza
 {
-    class Fornecedor : Pessoa
+    public class Fornecedor : Pessoa
     {
         public string Cnpj { get; set; }
         public string NomeFantasia { get; set; }
