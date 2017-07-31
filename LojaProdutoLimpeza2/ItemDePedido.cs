@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace LojaProdutoLimpeza2
 {
-    public class Venda
+    public class ItemDePedido
     {
-        public int NumeroVenda { get; set; }
+        public int IdItem { get; set; }
         public string Produto { get; set; }
         public int QuantidadeDeProdutos { get; set; }
 

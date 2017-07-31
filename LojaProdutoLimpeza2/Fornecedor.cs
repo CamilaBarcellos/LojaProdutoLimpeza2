@@ -12,11 +12,7 @@ namespace LojaProdutoLimpeza
         public string NomeFantasia { get; set; }
 
 
-        public void CadastrarFornecedor()
-        {
-
-        }
-
+        
         public void ListarFornecedor()
         {
 

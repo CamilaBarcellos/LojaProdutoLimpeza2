@@ -1,4 +1,5 @@
 ﻿using LojaProdutoLimpeza;
+using LojaProdutoLimpeza2;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -139,6 +140,199 @@ namespace LojaProdutoLimpezaUnitTest
                 DataValidade = new DateTime(2018, 05, 30),
                 Preco = 3.99,
                 Categoria = desinfetante
+            };
+
+            //Endereco
+
+            Endereco endereco1 = new Endereco()
+            {
+                Rua = "Silva Lobo",
+                Numero = 1250,
+                Sala = 1,
+                Cidade = "Belo Horizonte",
+                Cep = "32251-221",
+                Uf = "MG"
+            };
+
+            Endereco endereco2 = new Endereco()
+            {
+                Rua = "Raja Gabaglia",
+                Numero = 3950,
+                Sala = 2,
+                Cidade = "Belo Horizonte",
+                Cep = "33252-522",
+                Uf = "MG"
+            };
+
+            Endereco endereco3 = new Endereco()
+            {
+                Rua = "Campos de Ourique",
+                Numero = 1220,
+                Sala = 3,
+                Cidade = "Betim",
+                Cep = "32260-724",
+                Uf = "MG"
+            };
+
+            //Fornecedores
+
+            Fornecedor forYpe = new Fornecedor()
+            {
+                Nome = "Ype Comercio de Produtos Naturais Ltda",
+                Telefone = "30302020",
+                Endereco = endereco1,
+                Cnpj = "31457212000124",
+                NomeFantasia = "Ypê"
+            };
+
+            Fornecedor forUau = new Fornecedor()
+            {
+                Nome = "Uau Produtos de Limpeza Ltda",
+                Telefone = "40204020",
+                Endereco = endereco2,
+                Cnpj = "52314568000141",
+                NomeFantasia = "Uau"
+            };
+
+            Fornecedor forLimpol = new Fornecedor()
+            {
+                Nome = "Limpol Comercio Ltda",
+                Telefone = "52413663",
+                Endereco = endereco3,
+                Cnpj = "43645879000123",
+                NomeFantasia = "Limpol"
+            };
+
+            Fornecedor forSantaClara = new Fornecedor()
+            {
+                Nome = "Santa Clara Ltda",
+                Telefone = "32365636",
+                Endereco = endereco1,
+                Cnpj = "41254789000124",
+                NomeFantasia = "Santa Clara"
+            };
+
+            Fornecedor forGlobo = new Fornecedor()
+            {
+                Nome = "Globo Produtos Ltda",
+                Telefone = "65897845",
+                Endereco = endereco2,
+                Cnpj = "45478520000125",
+                NomeFantasia = "Globo"
+            };
+
+            Fornecedor forComfort = new Fornecedor()
+            {
+                Nome = "Comfort Ltda",
+                Telefone = "69874587",
+                Endereco = endereco3,
+                Cnpj = "32457896000125",
+                NomeFantasia = "Comfort"
+            };
+
+            Fornecedor forDowny = new Fornecedor()
+            {
+                Nome = "Downy Ltda",
+                Telefone = "78459631",
+                Endereco = endereco1,
+                Cnpj = "47856932000125",
+                NomeFantasia = "Downy"
+            };
+
+            Fornecedor forPinhoSol = new Fornecedor()
+            {
+                Nome = "Pinho Sol Ltda",
+                Telefone = "78459632",
+                Endereco = endereco2,
+                Cnpj = "47896352000124",
+                NomeFantasia = "Downy"
+            };
+
+            Fornecedor forVeja = new Fornecedor()
+            {
+                Nome = "Veja Ltda",
+                Telefone = "78459633",
+                Endereco = endereco3,
+                Cnpj = "78549633000123",
+                NomeFantasia = "Veja"
+            };
+
+            //Status Clientes
+
+            Status stBom = new Status()
+            {
+                IdStatus = 1,
+                Classificacao = "BOM"
+            };
+
+            Status stMedio = new Status()
+            {
+                IdStatus = 2,
+                Classificacao = "MEDIO"
+            };
+
+            Status stRuim = new Status()
+            {
+                IdStatus = 3,
+                Classificacao = "RUIM"
+            };
+
+
+            //Clientes
+            
+            Cliente cliCamila = new Cliente()
+            {
+                Nome = "Camila Barcellos",
+                Telefone = "992493398",
+                Endereco = endereco2,
+                IdCliente = "Cli001",
+                Filiacao = "Carmen Aranda Barcellos",
+                LimiteCredito = 5.000,
+                Status = stBom
+            };
+
+            Cliente cliEwerton = new Cliente()
+            {
+                Nome = "Ewerton Rodrigues",
+                Telefone = "74589632",
+                Endereco = endereco3,
+                IdCliente = "cli002",
+                Filiacao = "Ana Rodrigues",
+                LimiteCredito = 3.000,
+                Status = stMedio
+            };
+
+            Cliente cliJean = new Cliente()
+            {
+                Nome = "Jean Nonato",
+                Telefone = "7854522",
+                Endereco = endereco1,
+                IdCliente = "cli003",
+                Filiacao = "Maria Nonato",
+                LimiteCredito = 0,
+                Status = stRuim
+            };
+
+            Cliente cliWashington = new Cliente()
+            {
+                Nome = "Washington Caetano",
+                Telefone = "78965412",
+                Endereco = endereco2,
+                IdCliente = "cli004",
+                Filiacao = "Resonita Caetano",
+                LimiteCredito = 2.000,
+                Status = stBom
+            };
+
+            Cliente cliFelipe = new Cliente()
+            {
+                Nome = "Felipe Andrade",
+                Telefone = "96587411",
+                Endereco = endereco3,
+                IdCliente = "cli005",
+                Filiacao = "Cleide Andrade",
+                LimiteCredito = 2.500,
+                Status = stMedio
             };
 
 

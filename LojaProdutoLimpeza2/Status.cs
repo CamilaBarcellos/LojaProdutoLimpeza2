@@ -8,8 +8,7 @@ namespace LojaProdutoLimpeza2
 {
     public class Status
     {
-        public int Bom { get; set; }
-        public int Medio { get; set; }
-        public int Ruim { get; set; }
+        public int IdStatus { get; set; }
+        public string Classificacao { get; set; }
     }
 }

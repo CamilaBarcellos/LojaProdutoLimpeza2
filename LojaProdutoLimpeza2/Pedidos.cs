@@ -18,12 +18,12 @@ namespace LojaProdutoLimpeza
         public List<Produto> ListaDeProdutos = new List<Produto>();
 
 
-        public void IncluirVenda()
+        public void IncluirItemDePedido()
         {
 
         }
 
-        public void RemoverVenda()
+        public void RemoverItemDePedido()
         {
 
         }

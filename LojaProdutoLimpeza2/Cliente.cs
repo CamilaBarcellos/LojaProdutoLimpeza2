@@ -7,24 +7,19 @@ using System.Threading.Tasks;
 
 namespace LojaProdutoLimpeza
 {
-    class Cliente : Pessoa
+    public class Cliente : Pessoa
     {
         
 
-        public int IdCliente { get; set; }
+        public string IdCliente { get; set; }
         public string Filiacao { get; set; }
         public double LimiteCredito { get; set; }
 
         public Status Status { get; set; }
 
+              
 
-        
-
-        public void CadastrarCliente()
-        {
-
-        }
-
+     
         public void ListarCliente()
         {
 
